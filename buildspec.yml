@@ -1,0 +1,18 @@
+version: 0.2
+
+phases:
+
+  install:
+    runtime-versions:
+      java: corretto17
+
+  build:
+    commands:
+      - echo Running Selenium Tests
+      - mvn clean test
+
+reports:
+  testng-reports:
+    files:
+      - "**/*"
+    base-directory: target/surefire-reports
