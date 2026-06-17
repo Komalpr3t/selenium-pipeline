@@ -8,3 +8,5 @@ phases:
   build:
     commands:
       - mvn clean test
+
+#test comment
